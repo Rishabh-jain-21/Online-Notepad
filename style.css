@@ -1,0 +1,92 @@
+body
+{
+    background-color: #ffc996;
+}
+#t1
+{
+    text-align: center;
+}
+#Font
+{
+
+    position: relative;
+    height: 30px;
+    width: 18%;
+}
+
+#size
+{
+    position: relative;
+    height: 31px;
+    width: 18%;
+}
+#bold
+{
+    border-radius: 9px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background-color: #ff8474;
+}
+#underline{
+    border-radius: 9px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background-color: #ff8474;
+}
+#italic{
+    border-radius: 9px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background-color: #ff8474;
+}
+#bold:hover{
+    background-color: brown;
+    color:azure
+}
+#italic:hover{
+    background-color: brown;
+    color:azure
+}
+#underline:hover{
+    background-color: brown;
+    color:azure
+}
+#Mytext
+{
+    position: relative;
+    height: 223px;
+    width: 97%;
+}
+#cl
+{
+    border-radius: 9px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background-color: #ff8474;
+}
+#cl
+{
+    background-color: #ff8474;
+   
+}
+#reset
+{
+    border-radius: 9px;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background-color: #ff8474;
+}
+#reset:hover{
+    background-color: brown;
+    color:azure
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Notepad</title>
+</head>
+<body>
+    <h1 id="t1">Online Notepad</h1>
+    <div class="container"  style="text-align: center;">
+        <div class="Options" > 
+            <p id="fonts" ><b>Writing Options</b></p>
+<select id="Font" onchange="changeFont(this)">
+<option value="Arial">Arial</option>
+<option value="Verdana">Verdana</option>
+<option value="Cambria">Cambria</option>
+<option value="Garamond">Garamond</option>
+<option value="Impact">Impact</option>
+<option value="Helvetica">Helvetica</option>
+<option value="Courier New">Courier New</option>
+<option value="Bookman">Bookman</option>    
+           </select>
+           <select id="size" onchange="ChangeSize(this)">
+               <option>8</option>
+               <option>9</option>
+               <option>10</option>
+               <option>11</option>
+               <option>12</option>
+               <option>14</option>
+               <option>16</option>
+               <option>18</option>
+               <option>20</option>
+               <option>22</option>
+               <option>24</option>
+               <option>26</option>
+               <option>30</option>
+           </select>
+           <button id="bold" onclick="Bold()">Bold</button>
+           <button id="underline" onclick="Underline()">Underline</button>
+           <button id="italic" onclick="Italic()">Italic</button>
+          </div>
+          <br><br>
+          <textarea id="Mytext" placeholder="Enter you text here ..........." rows="20" column="100"></textarea>
+          <br>
+          <button id="cl" onclick="clea()">Clear</button>
+          <button id="reset" onclick="Reset()">Reset</button>
+    </div>
+</body>
+<script type="text/javascript">
+function changeFont(font)
+{
+    document.getElementById('Mytext').style.fontFamily=font.value;
+}
+function ChangeSize(s){
+     document.getElementById('Mytext').style.fontSize=s.value+'px';
+}
+function Bold()
+{
+    var bol=document.getElementById('Mytext').style.fontWeight='bold';
+}
+function Underline()
+{
+    var bol=document.getElementById('Mytext').style.textDecoration = 'underline';
+}
+function Italic()
+{
+    var bol=document.getElementById('Mytext').style.fontStyle='Italic';
+}
+function Reset()
+{
+    var bol=document.getElementById('Mytext').style.fontStyle='Normal';
+    var bol=document.getElementById('Mytext').style.textDecoration = 'none';
+    var bol=document.getElementById('Mytext').style.fontWeight='Normal';
+}
+function clea()
+{
+    console.log('Clearing the text');  
+    document.getElementById('Mytext').value="";
+   
+}
+</script>
+</html>
